@@ -36,6 +36,7 @@ Inside "rce" you can write the following stuff (only one at a time):<br>
 "Timer: custom_timer_here" - U can set a countdown to the fx show<br>
 <br>
 <br>
+Then the program will parse what u have written and the corresponding function will start :) <br>
 # ⚠️ Important Disclaimer
 
 This software is:
