@@ -6,34 +6,34 @@ I highly recommend to compile the code with MSVC (because all the windows libs a
 This program is a Windows C application that uses the Graphics Device Interface (GDI) to manipulate the screen in real-time, creating visual glitches, screen melting effects, geometric shapes, and audio tones via the WinMM API. It features a continuous loop that polls a local web endpoint (http://127.0.0.1:80/rce) via curl to fetch remote commands. Depending on the received trigger, it executes specific visual shaders, displays localized custom message boxes, runs a timer countdown, or executes system commands locally using system().
 
 # How use it
-Prerequisites: You need a Windows environment (like a safe virtual machine or cybersecurity lab) with Microsoft Visual Studio installed.
-Compile: Open the x64 Native Tools Command Prompt for VS, and compile the code using: cl filename.c /O2 /link gdi32.lib user32.lib winmm.lib (or download the release)
-
-Then:
-Set up a local server on port 80 with apache2 and create a file named "rce" in the root of the server (like this: http://x.x.x.x/rce).
-Inside "rce" you can write the following stuff (only one at a time):
-
-"1" - Start a bunch of visual effects;
-"2" - Start vertical glitches
-"3" - Start horizontal glitches
-"4" - Tunnel effect
-"5" - Circolar effect
-"6" - Another Tunnel effect
-"7" - Some square
-"8" - Screen melter
-"9" - Atom bomb
-"10" - Some square stuff
-"11" - Predictable melter
-"Lulu" - Spawn my dog photos in the screen
-"Pixy" - Downscale the resolution
-"CHOOSE" - Spawn a question box then start some fx
-"IDLE" - Start idle effect
-"cmd: your_command_here" - Tiny windows shell here
-"CleanDWM" - Restart DWM.exe (Only if u run as Admin)
-"RandomMSGs" - Show random msg already written
-"Timer: custom_timer_here" - U can set a countdown to the fx show
-
-
+Prerequisites: You need a Windows environment (like a safe virtual machine or cybersecurity lab) with Microsoft Visual Studio installed.<br>
+Compile: Open the x64 Native Tools Command Prompt for VS, and compile the code using: cl filename.c /O2 /link gdi32.lib user32.lib winmm.lib (or download the release)<br>
+<br>
+Then:<br>
+Set up a local server on port 80 with apache2 and create a file named "rce" in the root of the server (like this: http://x.x.x.x/rce).<br>
+Inside "rce" you can write the following stuff (only one at a time):<br>
+<br>
+"1" - Start a bunch of visual effects;<br>
+"2" - Start vertical glitches<br>
+"3" - Start horizontal glitches<br>
+"4" - Tunnel effect<br>
+"5" - Circolar effect<br>
+"6" - Another Tunnel effect<br>
+"7" - Some square<br>
+"8" - Screen melter<br>
+"9" - Atom bomb<br>
+"10" - Some square stuff<br>
+"11" - Predictable melter<br>
+"Lulu" - Spawn my dog photos in the screen<br>
+"Pixy" - Downscale the resolution<br>
+"CHOOSE" - Spawn a question box then start some fx<br>
+"IDLE" - Start idle effect<br>
+"cmd: your_command_here" - Tiny windows shell here<br>
+"CleanDWM" - Restart DWM.exe (Only if u run as Admin)<br>
+"RandomMSGs" - Show random msg already written<br>
+"Timer: custom_timer_here" - U can set a countdown to the fx show<br>
+<br>
+<br>
 # ⚠️ Important Disclaimer
 
 This software is:
