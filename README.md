@@ -2,6 +2,37 @@ This is a program written in C by me, i wrote stereoxopya only for see how good 
 In this project i used very common and simple libraries like: windows.h, mmsystem.h, math.h, string.h, stdio.h and time.h <br>
 I highly recommend to compile the code with MSVC (because all the windows libs are installed by default) <br>
 
+# ⚠️ How it works
+This program is a Windows C application that uses the Graphics Device Interface (GDI) to manipulate the screen in real-time, creating visual glitches, screen melting effects, geometric shapes, and audio tones via the WinMM API. It features a continuous loop that polls a local web endpoint (http://127.0.0.1:80/rce) via curl to fetch remote commands. Depending on the received trigger, it executes specific visual shaders, displays localized custom message boxes, runs a timer countdown, or executes system commands locally using system().
+
+# How use it
+Prerequisites: You need a Windows environment (like a safe virtual machine or cybersecurity lab) with Microsoft Visual Studio installed.
+Compile: Open the x64 Native Tools Command Prompt for VS, and compile the code using: cl filename.c /O2 /link gdi32.lib user32.lib winmm.lib (or download the release)
+
+Then:
+Set up a local server on port 80 with apache2 and create a file named "rce" in the root of the server (like this: http://x.x.x.x/rce).
+Inside "rce" you can write the following stuff (only one at a time):
+
+"1" - Start a bunch of visual effects;
+"2" - Start vertical glitches
+"3" - Start horizontal glitches
+"4" - Tunnel effect
+"5" - Circolar effect
+"6" - Another Tunnel effect
+"7" - Some square
+"8" - Screen melter
+"9" - Atom bomb
+"10" - Some square stuff
+"11" - Predictable melter
+"Lulu" - Spawn my dog photos in the screen
+"Pixy" - Downscale the resolution
+"CHOOSE" - Spawn a question box then start some fx
+"IDLE" - Start idle effect
+"cmd: your_command_here" - Tiny windows shell here
+"CleanDWM" - Restart DWM.exe (Only if u run as Admin)
+"RandomMSGs" - Show random msg already written
+"Timer: custom_timer_here" - U can set a countdown to the fx show
+
 
 # ⚠️ Important Disclaimer
 
