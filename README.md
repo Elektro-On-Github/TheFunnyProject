@@ -7,7 +7,9 @@ This program is a Windows C application that uses the Graphics Device Interface 
 
 # How use it
 Prerequisites: You need a Windows environment (like a safe virtual machine or cybersecurity lab) with Microsoft Visual Studio installed.<br>
-Compile: Open the x64 Native Tools Command Prompt for VS, and compile the code using: cl filename.c /O2 /link gdi32.lib user32.lib winmm.lib (or download the release)<br>
+Compile: Open the x64 Native Tools Command Prompt for VS, and compile the code using: <br>
+<br>
+cl filename.c /O2 /link gdi32.lib user32.lib winmm.lib (or download the release)<br>
 <br>
 Then:<br>
 Set up a local server on port 80 with apache2 and create a file named "rce" in the root of the server (like this: http://x.x.x.x/rce).<br>
