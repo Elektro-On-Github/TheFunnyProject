@@ -1,4 +1,4 @@
-This is a program written in C by me, i wrote stereoxopya only for see how good i am in Windows Internals and C programming.<br>
+This is a program written in C by me, i wrote TheFunnyProject only for see how good i am in Windows Internals and C programming.<br>
 In this project i used very common and simple libraries like: windows.h, mmsystem.h, math.h, string.h, stdio.h and time.h <br>
 I highly recommend to compile the code with MSVC (because all the windows libs are installed by default) <br>
 
@@ -103,7 +103,7 @@ Using virtual machines is optional because:
 - You can control behaviors
 
 # How compile the code?
-<code>cl "path/to/stereoxopya.c" /O2 /link gdi32.lib user32.lib</code><br>
+<code>cl "path/to/TheFunnyProject.c" /O2 /link gdi32.lib user32.lib</code><br>
 *Obv you need Visual Studio with C compiler!*
 
 # Author
